@@ -3,7 +3,7 @@
 }
 
 .App-logo {
-  height: 40vmin;
+  /* height: 40vmin; */
   pointer-events: none;
 }
 
@@ -15,7 +15,7 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -24,9 +24,7 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
+
 
 @keyframes App-logo-spin {
   from {
@@ -34,5 +32,278 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 434px;
+}
+
+.side-bar {
+  position: -webkit-sticky !important;
+  position: sticky !important;
+  top: 0 !important;
+}
+
+.side-nav {
+  background-color: #2d545e;
+  position: fixed;
+  height: 100vh;
+  
+}
+
+.brand-navbar {
+  display: flex;
+  padding: 0.5rem;
+}
+
+.navbar-brand {
+  margin-top: 40%;
+  align-items: center;
+  margin-right: 0 !important;
+}
+
+@media (max-width: 991px) {
+  .navbar-brand {
+    margin-top: 0;
+  }
+  .name {
+    display: none;
+  }
+}
+
+.nav-list {
+  text-align: center;
+  list-style: none;
+  padding-left: 0;
+  text-decoration: none;
+}
+
+.nav-link {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+ .nav-link:hover{
+  color: whitesmoke ;
+}
+ .nav-link:focus{
+  color: white ;
+}
+
+a {
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+  list-style: none;
+  
+}
+
+
+.my-pic {
+  border-radius: 100%;
+  height: auto;
+  width: auto;
+  vertical-align: middle;
+ }
+
+ img {
+  width: 200px;
+ height: 200px;
+ background-size: cover;
+ border-radius: 100%;
+ -webkit-border-radius: 100%;
+ -moz-border-radius: 100%;
+ margin: auto auto 0;
+ }
+
+ .nav-item {
+   font-family: 'Muli', sans-serif;
+   font-weight: bolder;
+   font-size: 18px;
+   letter-spacing: 0.05rem;
+ }
+
+ .name {
+   font-family: 'Saira Extra Condensed', sans-serif;
+   font-weight: 700;
+   font-size: 3rem;
+   text-transform: uppercase;
+ }
+ .first-name {
+   color: black;
+   font-size: 180%;
+   font-weight: 900%;
+ }
+
+ .last-name {
+  color: #2d545e;
+  font-size: 180%;
+  font-weight: 900%;
+}
+
+.about {
+  height: 100vh;
+  display: table-cell;
+  vertical-align: middle;
+  
+}
+
+.about > p {
+  font-family: 'Saira Extra Condensed', sans-serif;
+  font-size: 2rem;
+}
+
+.section-side {
+  background: rgba(179, 202, 201, 0.5);
+}
+
+.about-list > li {
+  list-style: none;
+  display: inline;
+  text-justify: auto;
+  padding: 20px 20px;
+  font-size: 34px;
+  background: rgb(180, 179, 179);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+.about-list > li:hover {
+  background: #2d545e;
+  color: white !important;
+}
+
+
+.about-list > li > a:hover , .project-container > a:hover {
+  color: white;
+  text-decoration: none ;
+}
+.about-list > li > a , .project-container > a {
+  text-decoration: none ;
+  color: inherit;
+}
+
+.resume-section {
+  height: 140vh;
+}
+.experience {
+  font-size: 200%;
+  font-weight: 900%;
+}
+.experience , .education , .Skills , .Projects {
+  text-align: left;
+}
+
+
+h2 {
+  font-size: 2.4rem !important;
+}
+
+h3 {
+  font-size: 2rem !important;
+}
+
+h2, h3 {
+  font-weight: 700 !important;
+  text-transform: uppercase;
+  font-family: 'Saira Extra Condensed', sans-serif;
+}
+
+.sub {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-family: 'Saira Extra Condensed', sans-serif;
+  font-weight: 700;
+  color: #868E96;
+  
+}
+
+
+
+.resume-item .resume-date .resume-section {
+  min-width: none;
+  box-sizing: border-box;
+}
+
+.resume-section {
+  max-width: 75rem;
+}
+
+.resume-item {
+  max-width: 50rem;
+}
+
+.resume-content {
+  width: 65rem;
+}
+
+.resume-date {
+  font-size: 1.2rem !important;
+  width: 70rem; 
+  padding-right: 0 !important;
+  color: #2d545e;
+  font-family: 'Muli', sans-serif;
+}
+
+p {
+  font-family: 'Muli', sans-serif;
+  font-size: 1.2rem;
+}
+
+@media only screen and (max-width:766px) {
+  .resume-content {
+    width: 100%;
+  }
+  .resume-section {
+    height: 120vh;
+  }
+}
+
+.dev-icons , .speed-math-icon {
+  font-size: 3.5rem;
+  color: #868E96;
+  list-style-type: none;
+}
+
+.dev-icons > li {
+  display: inline;
+  text-justify: auto;
+  padding: 10px;
+}
+
+.dev-icons > li:hover {
+  color: #2d545e
+}
+
+.Skills {
+  height: 80vh ;
+}
+
+.Projects {
+  height: 190vh;
+}
+
+.speed-math , .project-container:hover{
+  background: #2d545e;
+  color: white;
+  animation: gridant 3s
+}
+
+.project-icons > span:hover {
+  
+}
+
+@keyframes pulse {
+  0% {
+    color: black;
+    
+  }
+  100% {
+    color: white;
+    background-color: #2d545e;
   }
 }
